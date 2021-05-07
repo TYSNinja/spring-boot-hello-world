@@ -3,13 +3,13 @@
 
 FROM openjdk
 
-COPY pom.xml /tmp/
-COPY mvnw /tmp/
-COPY hello-world-starter/ /tmp/hello-world-starter
-COPY hello-world-app/ /tmp/hello-world-app
-COPY mvnw.cmd /tmp
-COPY .mvn/ /tmp/.mvn
-WORKDIR /tmp/
+COPY pom.xml /app/
+COPY mvnw /app/
+COPY hello-world-starter/ /app/hello-world-starter
+COPY hello-world-app/ /app/hello-world-app
+COPY mvnw.cmd /app
+COPY .mvn/ /app/.mvn
+WORKDIR /app/
 
 RUN ./mvnw clean install
 
@@ -23,6 +23,6 @@ LABEL MAINTAINER tkyls
 EXPOSE 8080
 
 #default command
-CMD java -jar /tmp/target/hello-world-0.1.0.-SNAPSHOT.jar 
+CMD java -jar /app/target/hello-world-0.1.0.-SNAPSHOT.jar 
 #copy hello world to docker image from builder image
 
