@@ -23,6 +23,6 @@ LABEL MAINTAINER tkyls
 EXPOSE 8080
 
 #default command
-
+CMD java -jar /tmp/target/hello-world-0.1.0.-SNAPSHOT.jar 
 #copy hello world to docker image from builder image
 
