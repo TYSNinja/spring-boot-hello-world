@@ -18,7 +18,7 @@ FROM openjdk
 #maintainer
 LABEL MAINTAINER tkyls
 #expose port 8080
-EXPOSE 8081
+EXPOSE 8080
 
 #default command
 CMD java -jar /app/target/hello-world-0.1.0.-SNAPSHOT.jar 
