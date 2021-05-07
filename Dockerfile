@@ -23,7 +23,6 @@ LABEL MAINTAINER tkyls
 EXPOSE 8080
 
 #default command
-CMD --from=maven_build /tmp/target/hello-world-0.1.0.-SNAPSHOT.jar /data/hello-world-0.1.0.jar
 
 #copy hello world to docker image from builder image
 
