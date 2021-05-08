@@ -15,7 +15,7 @@ git([url: 'https://github.com/TYSNinja/spring-boot-hello-world.git', branch: 'ma
 stage('Building image') {
 steps{
 script {
-dockerImage = docker.build imagename
+dockerImage = docker.build(imagename)
 }
 }
 }
