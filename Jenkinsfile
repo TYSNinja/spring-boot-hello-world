@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
- //       git([url: 'https://github.com/TYSNinja/spring-boot-hello-world.git', branch: 'master', credentialsId: 'TYSNinja-github-user-token'])
+ //       git([url: 'https://github.com/TYSNinja/spring-boot-hello-world.git', branch: 'master', credentialsId: 'Jenkins-hello-world'])
  	checkout scm
 
       }
