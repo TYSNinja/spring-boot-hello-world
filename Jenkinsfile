@@ -4,7 +4,7 @@ pipeline {
 
         registry = "tkyls/spring-boot-hello-world" 
 
-        registryCredential = 'jenkins-token' 
+        registryCredential = 'docker-token' 
 
         dockerImage = '' 
 
